@@ -1,0 +1,235 @@
+/* Contact List Container */
+.contact-list {
+  background-color: #ffffff; /* Couleur de fond de la liste de contacts */
+  border-radius: 15px; /* Coins arrondis */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  padding: 40px; /* Espacement interne */
+  margin-top: 20px; /* Espacement supérieur */
+}
+
+/* Title Styles */
+.contact-list h2 {
+  text-align: center; /* Centrer le titre */
+  margin-bottom: 25px; /* Espacement inférieur */
+  font-size: 26px; /* Taille de police */
+  color: #34495e; /* Couleur du titre */
+}
+
+/* Contact Card Styles */
+.contact-card {
+  display: flex; /* Flexbox pour aligner les éléments */
+  justify-content: space-between; /* Espacement entre les éléments */
+  align-items: center; /* Alignement vertical */
+  background-color: #f9f9f9; /* Couleur de fond de la carte */
+  margin-bottom: 20px; /* Espacement inférieur */
+  padding: 20px; /* Espacement interne */
+  border: 1px solid #dcdcdc; /* Bordure douce */
+  border-radius: 12px; /* Coins arrondis */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  transition: all 0.3s ease; /* Transition douce */
+}
+
+.contact-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Ombre plus prononcée au survol */
+  transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+/* Contact Details Styles */
+.contact-details {
+  flex: 1; /* Prendre tout l'espace disponible */
+}
+
+.contact-details h3 {
+  margin: 0; /* Pas de marge */
+  font-size: 20px; /* Taille de police pour le nom */
+  color: #2c3e50; /* Couleur du nom */
+}
+
+.contact-details p {
+  margin-top: 5px; /* Espacement supérieur */
+  font-size: 16px; /* Taille de police pour l'email */
+  color: #7f8c8d; /* Couleur de l'email */
+}
+
+/* Contact Actions Styles */
+.contact-actions {
+  display: flex; /* Flexbox pour aligner les boutons */
+  gap: 10px; /* Espacement entre les boutons */
+}
+
+/* Button Styles */
+button {
+  padding: 10px 15px; /* Espacement interne */
+  font-size: 14px; /* Taille de police */
+  font-weight: 500; /* Poids de la police */
+  border-radius: 8px; /* Coins arrondis */
+  border: none; /* Pas de bordure */
+  cursor: pointer; /* Curseur en main */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition douce */
+}
+
+/* Edit Button */
+.edit-btn {
+  background: linear-gradient(135deg, #3498db, #2980b9); /* Dégradé de couleur */
+  color: #ffffff; /* Couleur du texte */
+}
+
+.edit-btn:hover {
+  background: linear-gradient(135deg, #2980b9, #1f6391); /* Dégradé au survol */
+}
+
+/* Delete Button */
+.delete-btn {
+  background: linear-gradient(135deg, #e74c3c, #c0392b); /* Dégradé de couleur */
+  color: #ffffff; /* Couleur du texte */
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #c0392b, #a93226); /* Dégradé au survol */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-card {
+      flex-direction: column; /* Changer la direction en colonne */
+      align-items: flex-start; /* Alignement à gauche */
+      gap: 10px; /* Espacement entre les éléments */
+  }
+
+  .contact-actions {
+      width: 100%; /* Largeur complète */
+      justify-content: space-between; /* Espacement entre les actions */
+  }
+}
+
+/* Add Contact Form Styles */
+.add-contact {
+  background-color: #ffffff; /* Couleur de fond du formulaire */
+  border-radius: 12px; /* Coins arrondis */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  padding: 30px; /* Espacement interne */
+  margin: 50px ; /* Marges verticales */
+}
+
+/* Form Title */
+.add-contact h2 {
+  margin-bottom: 20px; /* Espacement inférieur */
+  font-size: 24px; /* Taille de police pour le titre */
+  color: #34495e; /* Couleur du titre */
+  text-align: center; /* Centrer le titre */
+}
+
+/* Input Styles */
+.add-contact input {
+  width: 100%; /* Largeur complète */
+  padding: 10px; /* Espacement interne */
+  margin-bottom: 15px; /* Espacement inférieur */
+  border: 1px solid #dcdcdc; /* Bordure douce */
+  border-radius: 8px; /* Coins arrondis */
+  font-size: 16px; /* Taille de police */
+  color: #333; /* Couleur du texte */
+}
+
+/* Input Focus Styles */
+.add-contact input:focus {
+  border-color: #3498db; /* Couleur de bordure au focus */
+  outline: none; /* Pas de contour par défaut */
+}
+
+/* Button Styles */
+.add-contact button {
+  width: 100%; /* Largeur complète */
+  padding: 10px; /* Espacement interne */
+  font-size: 16px; /* Taille de police */
+  font-weight: 500; /* Poids de la police */
+  border-radius: 8px; /* Coins arrondis */
+  border: none; /* Pas de bordure */
+  background: linear-gradient(135deg, #3498db, #2980b9); /* Dégradé de couleur */
+  color: #ffffff; /* Couleur du texte */
+  cursor: pointer; /* Curseur en main */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition douce */
+}
+
+/* Button Hover Styles */
+.add-contact button:hover {
+  background: linear-gradient(135deg, #2980b9, #1f6391); /* Dégradé au survol */
+  transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-contact {
+      padding: 20px; /* Espacement interne réduit sur les petits écrans */
+      margin:30px;
+  }
+
+  .add-contact h2 {
+      font-size: 20px; /* Taille de police réduite pour le titre */
+  }
+
+  .add-contact input {
+      font-size: 14px; /* Taille de police réduite pour les champs */
+  }
+
+  .add-contact button {
+      font-size: 14px; /* Taille de police réduite pour le bouton */
+  }
+}
+/* Navbar Styles */
+nav {
+  background-color: #007bff; /* Couleur de fond de la barre de navigation */
+  padding: 15px 30px; /* Espacement interne */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+/* Navbar List Styles */
+ul {
+  list-style: none; /* Pas de puces */
+  display: flex; /* Flexbox pour aligner les éléments */
+  justify-content: space-between; /* Espacement entre les éléments */
+  align-items: center; /* Alignement vertical */
+  margin: 0; /* Pas de marge */
+  padding: 0; /* Pas de padding */
+}
+
+/* Navbar Item Styles */
+li {
+  margin: 0 15px; /* Espacement entre les éléments de la liste */
+}
+
+/* Link Styles */
+a {
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Pas de soulignement */
+  font-weight: 500; /* Poids de la police */
+  transition: color 0.3s ease; /* Transition douce pour la couleur */
+}
+
+/* Link Hover Styles */
+a:hover {
+  text-decoration: underline; /* Soulignement au survol */
+  color: #e0e0e0; /* Couleur plus claire au survol */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+      padding: 10px 20px; /* Espacement interne réduit sur les petits écrans */
+  }
+
+  ul {
+      flex-direction: column; /* Changer la direction en colonne sur les petits écrans */
+      align-items: flex-start; /* Alignement à gauche */
+  }
+
+  li {
+      margin: 5px 0; /* Espacement vertical entre les éléments de la liste */
+  }
+}
+
+.success-message {
+  margin-top: 15px; /* Espacement supérieur */
+  color: #28a745; /* Couleur verte pour le succès */
+  font-weight: bold; /* Texte en gras */
+  text-align: center; /* Centrer le texte */
+}
